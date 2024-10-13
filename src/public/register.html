@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <script src="js/register.js" defer></script>
+        <title>Sign Up</title>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="info.html">Info</a>
+                </li>
+                <li>
+                    <a href="register.html">Register</a>
+                </li>
+                <li>
+                    <a href="login.html">Login</a>
+                </li>
+            </ul>
+        </nav>
+        <section>
+            <h2>Registration</h2>
+            <form name="regform" novalidate>
+                <label for="username">Username</label>
+                <input required type="text" name="username" id="username">
+                <span id="username-error">Username is a required field</span>
+                <br><br>
+                <label for="birthdate">Date of Birth</label>
+                <input type="date" name="birthdate">
+                <br><br>
+                <label for="single">Single</label>
+                <input type="radio" value="single" name="relation">
+                <br>
+                <label for="dating">Dating</label>
+                <input type="radio" value="dating" name="relation">
+                <br>
+                <label for="married">Married</label>
+                <input type="radio" value="married" name="relation">
+                <br>
+                <label for="other">Other</label>
+                <input type="radio" value="other" name="relation">
+                <br><br>
+                <label for="knowledge">Knowledge About Sharks</label>
+                <select name="knowledge">
+                    <option value="baseball">None</option>
+                    <option value="basketball">Little</option>
+                    <option value="football">Average</option>
+                    <option value="soccer">Lot</option>
+                    <option value="hockey">Extensive</option>
+                </select>
+                <br>
+                <p>What types of sharks have you heard of?</p>
+                <input type="checkbox" value="greatWhite">
+                <label for="greatWhite">Great White Shark</label>
+                <br>
+                <input type="checkbox" value="whale">
+                <label for="whale">Whale Shark</label>
+                <br>
+                <input type="checkbox" value="bull">
+                <label for="bull">Bull Shark</label>
+                <br>
+                <input type="checkbox" value="mako">
+                <label for="mako">Mako Shark</label>
+                <br>
+                <input type="checkbox" value="hammerhead">
+                <label for="hammerhead">Hammerhead Shark</label>
+                <br><br>
+                <label for="comments">Comments/Suggestions</label>
+                <br>
+                <textarea name="comments"></textarea>
+                <br><br>
+                <button type="submit">Submit</button>
+                <br><br><br>
+            </form>
+        </section>
+    </body>
+</html>

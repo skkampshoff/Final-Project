@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <title>Login</title>
+        <script src="js/login.js" defer></script>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="info.html">Info</a>
+                </li>
+                <li>
+                    <a href="register.html">Register</a>
+                </li>
+                <li>
+                    <a href="login.html">Login</a>
+                </li>
+            </ul>
+        </nav>
+        <section>
+            <h2>Login</h2>
+            <form name="loginform" novalidate>
+                <label for="query">ID</label>
+                <input required type="number" name="query" id="query">
+                <span id="query-error">ID is a required field</span>
+                <br><br>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </body>
+</html>
